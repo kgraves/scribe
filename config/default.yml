@@ -1,0 +1,33 @@
+# title that shows up on the terminal
+title: scribe
+description: testing testing
+# constants for note backup
+# TODO
+
+# layouts and defaults for widgits
+layouts:
+  list:
+    parent: screen
+    alight: center
+    mouse: true
+    keys: true
+    vi: true
+    width: 25%
+    height: 100%
+    border: line
+    top: 0
+    left: 0
+    style:
+      fg: blue
+      bg: default
+      selected:
+        bg: green
+    items:
+      - dev.md
+      - new_machine_setup.md
+      - meeting_03012015.md
+      - settings
+      - exit
+  screen:
+    autoPadding: true
+    smartCSR: true

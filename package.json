@@ -1,0 +1,23 @@
+{
+  "name": "scribe",
+  "version": "0.0.1",
+  "description": "cli note program",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node_modules/.bin/jasmine"
+  },
+  "author": "kg",
+  "license": "MIT",
+  "dependencies": {
+    "blessed": "0.0.50",
+    "config": "1.11.0",
+    "js-yaml": "3.2.6",
+    "underscore": "1.7.0"
+  },
+  "devDependencies": {
+    "jasmine": ">=2.2.1",
+    "sinon": ">=1.12.2",
+    "sqlite3": ">= 3.0.5"
+  }
+}
