@@ -1,8 +1,8 @@
 # title that shows up on the terminal
-title: scribe
-description: testing testing
-# constants for note backup
-# TODO
+scribe:
+  title: scribe
+  description: testing testing
+  directory: '.scribe'
 
 # layouts and defaults for widgits
 layouts:

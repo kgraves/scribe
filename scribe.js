@@ -1,16 +1,23 @@
 var blessed = require('blessed');
 var config = require('config');
+var scribe = require('scribe');
 var yaml = require('js-yaml');
+
+// install
+if (!scribe.init()) {
+  console.error('There was an error installing scribe...uh oh :(');
+  process.exit(1);
+}
 
 /**
 +-----------------------------------------------+
 |         |                                     |
 |         |                                     |
-| file    |                                     |
+|         |                                     |
+|         |                                     |
+|         |                                     |
+| file    |              editor                 |
 | explorer|                                     |
-|         |                                     |
-|         |              editor                 |
-|         |                                     |
 |         |                                     |
 |         |                                     |
 |         |                                     |
@@ -19,9 +26,6 @@ var yaml = require('js-yaml');
 |-----------------------------------------------|
 |___________________status bar__________________+
 */
-
-// console.log(config);
-// process.exit(0);
 
 // create the programs main screen
 var screen = blessed.screen(config.layouts.screen);
@@ -144,6 +148,8 @@ screen.key(['escape', 'q'], function(ch, key) {
   return process.exit(0);
 });
 
+// focus on the status line
+// TODO should focus on editor? once submited
 screen.key([':'], function(ch, key) {
   statusLine.focus();
 });

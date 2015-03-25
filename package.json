@@ -2,10 +2,14 @@
   "name": "scribe",
   "version": "0.0.1",
   "description": "cli note program",
+  "repository": "https://github.com/kgraves/scribe",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node scribe.js",
     "test": "node_modules/.bin/jasmine"
+  },
+  "bin": {
+    "scribe": "./scribe.js"
   },
   "author": "kg",
   "license": "MIT",
@@ -17,7 +21,6 @@
   },
   "devDependencies": {
     "jasmine": ">=2.2.1",
-    "sinon": ">=1.12.2",
-    "sqlite3": ">= 3.0.5"
+    "sinon": ">=1.12.2"
   }
 }
