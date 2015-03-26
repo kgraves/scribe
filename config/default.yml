@@ -31,3 +31,4 @@ layouts:
   screen:
     autoPadding: true
     smartCSR: true
+    title: 'scribe'
